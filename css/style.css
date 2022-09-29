@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    font-family: 'Nunito';
+    src: url('../font/static/Nunito-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+  background-color: #86D9FC; 
+  font-family: 'Nunito'; 
+}
+
+/* HEADER*/
+
+header{
+    background-color: #081167;
+    height: 75px; 
+    width: 98%;
+    margin-top: 2%;
+    margin-left: 1%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left-header{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.right-header{
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.burger{
+    margin-left: 25px;
+}
+
+
+/*SECCION LANZAMINETOS*/
+
+.conteiner-titulo-lanzamiento{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.conteiner-titulo-lanzamiento h1{
+     color: #081167;
+     font-size: 60px;
+     margin-top: 2%;
+     margin-bottom: 2%;
+}
+
+.carrusel-prox-lanzamientos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjeta-lanzamientos{
+
+    width: 391px;
+    background-color: #030625;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.titulo-tarjeta{
+    color:#FEC665;
+    font-size: 180%;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.tarjeta-lanzamientos img{
+    height: 254px;
+    width: 341px;
+    margin-left: 6.5%;
+    margin-top: 6%;
+    border-radius: 20px;
+}
+
+.btn-jugar-lanzamiento{
+    height: 51px;
+    width: 109px;
+    border-radius: 30px;
+    background-color:  #4152F1;
+    color: #C0C6FA;
+    margin-left: 65%;
+    margin-bottom: 12%;
+    font-size: 100%;
+}
+
+/*SECCION RECOMENDADOS*/
+
+h2 {
+    color: #081167;
+}
+
+.carrusel {
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.tarjeta-juego{
+    width: 330px;
+    border-radius: 20px;
+    background-color: #030625;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tarjeta-juego img {
+    height: 240px;
+    width: 288px;
+    border-radius: 20px;
+    margin-left: 6.5%;
+    margin-top: 6%;
+}
+
+.tirulo-tarjeta{
+    color: #FEC665;
+    font-size: 180%;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.btn-jugar{
+    border-radius: 30px;
+    background-color:  #4152F1;
+    color: #C0C6FA;
+    margin-left: 65%;
+    margin-bottom: 12%;
+    font-size: 100%;
+    height: 41px;
+    width: 99px;
+    left: 197px;
+    top: 373px;
+}
+
+.btn-comprar{
+    border-radius: 30px;
+    background-color:  #FFAB19;
+    color: #C0C6FA;
+    margin-left: 65%;
+    margin-bottom: 12%;
+    font-size: 100%;
+    height: 41px;
+    width: 99px;
+    left: 197px;
+    top: 373px;
+}
+
+
+
+
+/*FOOTER*/
+
+.primerFooter{
+    background-color: #036791;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.titulo-primer-footer{
+    color: #F3F4FE;
+    font-size: 180%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.conteiner-titulo-primer-footer, .conteiner-cards-footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.card-footer{
+    width: 190px;
+    left: 109px;
+    top: 107px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #030625;
+    margin-left: 2%;
+}
+
+.card-footer img{
+    height: 64.8214340209961px;
+    width: 165.81817626953125px;
+    left: 12.09090805053711px;
+    top: 4.591552734375px;
+    border-radius: 20px;
+    margin-left: 6.5%;
+    margin-top: 6%;
+}
+
+.titulo-tarjeta-footer{
+    color: #FEC665;
+    font-size: 110%;
+    margin-left: 6%;
+    margin-top: 5%;
+    margin-bottom: 12%;
+}
+
+.segundoFooter{
+    background-color: #034D6D;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.tercerFooter{
+    background-color: #012F43;
+    display: flex;
+    justify-content: center;
+}
+
+.tercerFooter a{
+    color: #F3F4FE;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
