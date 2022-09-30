@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>home</title>
 </head>
 <body>
     <header>
-        <div class="logo">Logo</div>
-        <button class="burger">hamburguesa</button>
-        <div> <img src="usuario.jpg" alt="usuario_img">
-            <ul class="menuRender" id="menuRender-js"></ul>
+        <div>
+            <div class="left-header">
+                <a href="home.html"><img src="images/logos/undraw_gaming_re_cma2 1.png" alt="logo"></img></a>
+                <button class="burger">hamburguesa</button>
+                <ul class="menuRender" id="menuRender-js"></ul>
+            </div>
+        </div>
+        <div class="right-header"> 
+            <img src="images/logos/user.png" alt="usuario_img">
+            <ul class="menuRenderUser" id="menuRenderUser-js"></ul>
         </div>
     </header>
     <h1 class="titulo-destacado">Lineage II</h1>
@@ -95,30 +102,37 @@
     </div>
     <footer>
         <div class="primerFooter">
-            <p class="titulo-primer-footer">Juegos más solicitados de la semana</p>
-            <div class="card-footer">
-                <img src="4enlinea.jpg" alt="4enlinea">
-                <p>4 En Linea</p>
+            <div class="conteiner-titulo-primer-footer">
+                <p class="titulo-primer-footer">Juegos más solicitados de la semana</p>
+            </div>
+            <div class="conteiner-cards-footer">
+                <div class="card-footer">
+                <img src="images/4 en linea/4EnLinea-2.jpg" alt="4enlinea">
+                <p class="titulo-tarjeta-footer">4 En Linea</p>
             </div>
             <div class="card-footer">
-                <img src="MortalKombat.jpg" alt="MortalKombat">
-                <p>MortalKombat</p>
+                <img src="images/pelea/mortalKombat.jpg" alt="MortalKombat">
+                <p class="titulo-tarjeta-footer">MortalKombat</p>
             </div>
             <div class="card-footer">
-                <img src="CounterStrike.jpg" alt="CounterStrike">
-                <p>CounterStrike</p>
+                <img src="images/clasicos/counterStrike.jpg" alt="CounterStrike">
+                <p class="titulo-tarjeta-footer">CounterStrike</p>
             </div>
             <div class="card-footer">
-                <img src="MarioBross.jpg" alt="MarioBross">
-                <p>MarioBross</p>
+                <img src="images/family/MarioBross.webp" alt="MarioBross">
+                <p class="titulo-tarjeta-footer">MarioBross</p>
             </div>
             <div class="card-footer">
-                <img src="FIFA.jpg" alt="FIFA">
-                <p>FIFA</p>
+                <img src="images/deportes/fifa.jpeg" alt="FIFA">
+                <p class="titulo-tarjeta-footer">FIFA</p>
             </div>
+            </div>
+            
         </div>
         <div class="segundoFooter">
-            (iconos redes)
+            <div class="iconos-redes">
+                (iconos redes)
+            </div>
         </div>
         <div class="tercerFooter">
             <a href="home">GameRoom</a>
