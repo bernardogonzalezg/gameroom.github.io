@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1d972d2727.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>home</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
         <div>
             <div class="left-header">
                 <img src="logo.jpg" alt="logo">
-                <button class="burger">hamburguesa</button>
+                <button class="burger"><i class="fa-solid fa-bars"></i></button>
                 <ul class="menuRender" id="menuRender-js"></ul>
             </div>
         </div>
         <div class="right-header"> 
-            <img src="usuario.jpg" alt="usuario_img">
+            <div class="conteiner-user"><i class="fa-regular fa-user"></i></div>
             <ul class="menuRenderUser" id="menuRenderUser-js"></ul>
         </div>
     </header>
@@ -47,40 +49,59 @@
             <div class="tarjeta-juego">
                 <img src="images/4 en linea/4EnLinea-2.jpg" alt="4enlinea">
                 <p class="tirulo-tarjeta">4enlinea</p>
-                <button  class="btn-jugar" id="btn-jugar-4enlinea">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-4enlinea">Jugar</button>
+                </div>
+                
             </div>
             <div class="tarjeta-juego">
                 <img src="images/family/circus.png" alt="Circus">
                 <p class="tirulo-tarjeta">Circus</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-Circus">(carrito)</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-Circus">(carrito)</button>
+                </div>
             </div>
             <div class="tarjeta-juego">
                 <img src="images/family/battleCity.jpeg" alt="BattleCity">
                 <p class="tirulo-tarjeta">BattleCity</p>
-                <button  class="btn-jugar" id="btn-jugar-BattleCity">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-BattleCity">Jugar</button>
+                </div>
             </div>
             <div class="tarjeta-juego">
                 <img src="images/clasicos/tetris.jpg" alt="Tetris">
                 <p class="tirulo-tarjeta">Tetris</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-Tetris">(carrito)</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-Tetris">(carrito)</button>
+                </div>
             </div>
             <div class="tarjeta-juego">
                 <img src="images/clasicos/Pacman.gif" alt="PacMan">
                 <p class="tirulo-tarjeta">PacMan</p>
-                <button  class="btn-jugar" id="btn-jugar-PacMan">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-PacMan">Jugar</button>
+                </div>   
             </div>
             <div class="tarjeta-juego">
                 <img src="images/clasicos/galaga.jpg" alt="Galaga">
                 <p class="tirulo-tarjeta">Galaga</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-Galaga">(carrito)</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-Galaga">(carrito)</button>
+                </div>   
             </div>
             <div class="tarjeta-juego">
                 <img src="images/clasicos/counterStrike.jpg" alt="CounterStrike">
                 <p class="tirulo-tarjeta">Counter Strike</p>
-                <button  class="btn-jugar" id="btn-jugar-CounterStrike">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-CounterStrike">Jugar</button>
+                </div>
             </div>
         </div>
         <h2>Clásicos</h2>
@@ -88,40 +109,59 @@
             <div class="tarjeta-juego">
                 <img src="images/juego de mesa/ludo.webp" alt="Ludo">
                 <p class="tirulo-tarjeta">Ludo</p>
-                <button  class="btn-jugar" id="btn-jugar-Ludo">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-Ludo">Jugar</button>
+                </div>
             </div>
             <div class="tarjeta-juego">
                 <img src="images/juego de mesa/monopoli.jpg" alt="Monopoli">
                 <p class="tirulo-tarjeta">Monopoli</p>
-                <button  class="btn-jugar" id="btn-jugar-Monopoli">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-Monopoli">Jugar</button>
+                </div>
             </div>
             <div class="tarjeta-juego">
                 <img src="images/juego de mesa/truco.jpg" alt="Truco">
                 <p class="tirulo-tarjeta">Truco</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-Truco">(comprar)</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-Truco">(carrito)</button>
+                </div>
+                
             </div>
             <div class="tarjeta-juego">
                 <img src="images/juego de mesa/tute.gif" alt="TuteCabrero">
-                <p class="tirulo-tarjeta">TuteCabrero</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-TuteCabrero">(carrito)</button>
+                <p class="tirulo-tarjeta">Tute Cabrero</p>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-TuteCabrero">(carrito)</button>
+                </div> 
             </div>
             <div class="tarjeta-juego">
                 <img src="images/juego de mesa/uno.jpg" alt="Uno">
                 <p class="tirulo-tarjeta">Uno</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-Uno">(carrito)</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-Uno">(carrito)</button>
+                </div>    
             </div>
             <div class="tarjeta-juego">
                 <img src="images/juego de mesa/chinchon.jpg" alt="Chichon">
                 <p class="tirulo-tarjeta">Chichon</p>
-                <button  class="btn-jugar" id="btn-jugar-Chichon">jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-Chichon">jugar</button> 
+                </div>
             </div>
             <div class="tarjeta-juego">
                 <img src="images/juego de mesa/generala.png" alt="Generala">
                 <p class="tirulo-tarjeta">Generala</p>
-                <button  class="btn-jugar" id="btn-jugar-Generala">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-Generala">Jugar</button>
+                </div>
             </div>
         </div>
         <h2>Deportes</h2>
@@ -129,40 +169,58 @@
             <div class="tarjeta-juego">
                 <img src="images/deportes/daitona.jpg" alt="Daitona">
                 <p class="tirulo-tarjeta">Daitona</p>
-                <button  class="btn-jugar" id="btn-jugar-Daitona">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-Daitona">Jugar</button>
+                </div> 
             </div>
             <div class="tarjeta-juego">
                 <img src="images/deportes/fifa.jpeg" alt="FIFA">
                 <p class="tirulo-tarjeta">FIFA</p>
-                <button  class="btn-jugar" id="btn-jugar-FIFA">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-FIFA">Jugar</button>
+                </div>   
             </div>
             <div class="tarjeta-juego">
                 <img src="images/deportes/goal3.jpg" alt="Goal3">
                 <p class="tirulo-tarjeta">Goal 3</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-Goal3">(comprar)</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-Goal3">(carrito)</button>
+                </div>
             </div>
             <div class="tarjeta-juego">
                 <img src="images/deportes/microMachine.jpg" alt="MicroMachine">
                 <p class="tirulo-tarjeta">MicroMachine</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-MicroMachine">(carrito)</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-MicroMachine">(carrito)</button>
+                </div>
             </div>
             <div class="tarjeta-juego">
                 <img src="images/deportes/PingPong.webp" alt="PingPong">
                 <p class="tirulo-tarjeta">Ping Pong</p>
-                <p class="precio-juego-tarjeta">$150</p>
-                <button  class="btn-comprar" id="btn-comprar-PingPong">(carrito)</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta">$150</p>
+                    <button  class="btn-comprar" id="btn-comprar-PingPong">(carrito)</button>
+                </div>               
             </div>
             <div class="tarjeta-juego">
                 <img src="images/deportes/tenis.webp" alt="VirtualTenis">
                 <p class="tirulo-tarjeta">Virtual Tenis</p>
-                <button  class="btn-jugar" id="btn-jugar-VirtualTenis">jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-VirtualTenis">jugar</button>
+                </div>                
             </div>
             <div class="tarjeta-juego">
                 <img src="images/deportes/Voley.jpeg" alt="VirtualVoley">
                 <p class="tirulo-tarjeta">Virtual Voley</p>
-                <button  class="btn-jugar" id="btn-jugar-VirtualVoley">Jugar</button>
+                <div class="conteiner-precioBtnComprar">
+                    <p class="precio-juego-tarjeta"></p>
+                    <button  class="btn-jugar" id="btn-jugar-VirtualVoley">Jugar</button>
+                </div>               
             </div>
         </div>
     </Section>
@@ -173,31 +231,33 @@
             </div>
             <div class="conteiner-cards-footer">
                 <div class="card-footer">
-                <img src="images/4 en linea/4EnLinea-2.jpg" alt="4enlinea">
-                <p class="titulo-tarjeta-footer">4 En Linea</p>
+                    <img src="images/4 en linea/4EnLinea-2.jpg" alt="4enlinea">
+                    <p class="titulo-tarjeta-footer">4 En Linea</p>
+                </div>   
+                <div class="card-footer">
+                    <img src="images/pelea/mortalKombat.jpg" alt="MortalKombat">
+                    <p class="titulo-tarjeta-footer">MortalKombat</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/clasicos/counterStrike.jpg" alt="CounterStrike">
+                    <p class="titulo-tarjeta-footer">CounterStrike</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/family/MarioBross.webp" alt="MarioBross">
+                    <p class="titulo-tarjeta-footer">MarioBross</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/deportes/fifa.jpeg" alt="FIFA">
+                    <p class="titulo-tarjeta-footer">FIFA</p>
+                </div> 
             </div>
-            <div class="card-footer">
-                <img src="images/pelea/mortalKombat.jpg" alt="MortalKombat">
-                <p class="titulo-tarjeta-footer">MortalKombat</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/clasicos/counterStrike.jpg" alt="CounterStrike">
-                <p class="titulo-tarjeta-footer">CounterStrike</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/family/MarioBross.webp" alt="MarioBross">
-                <p class="titulo-tarjeta-footer">MarioBross</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/deportes/fifa.jpeg" alt="FIFA">
-                <p class="titulo-tarjeta-footer">FIFA</p>
-            </div>
-            </div>
-            
         </div>
         <div class="segundoFooter">
             <div class="iconos-redes">
-                (iconos redes)
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
             </div>
         </div>
         <div class="tercerFooter">

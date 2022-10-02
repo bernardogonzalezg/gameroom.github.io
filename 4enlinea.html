@@ -4,37 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <script src="https://kit.fontawesome.com/1d972d2727.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>4 En Linea</title>
 </head>
 <body>
     <header>
-        <div class="logo">Logo</div>
-        <button class="burger">hamburguesa</button>
-        <div> <img src="usuario.jpg" alt="usuario_img">
-            <ul class="menuRender" id="menuRender-js"></ul>
+        <div>
+            <div class="left-header">
+                <img src="logo.jpg" alt="logo">
+                <button class="burger"><i class="fa-solid fa-bars"></i></button>
+                <ul class="menuRender" id="menuRender-js"></ul>
+            </div>
+        </div>
+        <div class="right-header"> 
+            <div class="conteiner-user"><i class="fa-regular fa-user"></i></div>
+            <ul class="menuRenderUser" id="menuRenderUser-js"></ul>
         </div>
     </header>
-    <div class="breadCrum-conteiner">
-        <div class="bread_Crum1">
-            <p>Inicio</p>
-        </div>
-        <div class="bread_Crum2">
-            <p>Recomendados</p>
-        </div>
-        <div class="bread_Crum3">
-            <p>4 En Linea</p>
+    <div class="conteiner-breadCrumTitulo">
+        <div class="breadCrum-conteiner">
+            <div class="bread_Crum1">
+                <p>Inicio</p>
+            </div>
+            <div class="bread_Crum2">
+                <p>Recomendados</p>
+            </div>
+            <div class="bread_Crum3">
+                <p>4 En Linea</p>
+            </div>
+        </div>    
+        <div class="conteiner-titulo-juego">
+            <h1 class="titulo-juego"> 4 En Linea</h1>
         </div>
     </div>
-    <h1 class="titulo-juego"> 4 En Linea</h1>
-    <img class="img-ppal-juego" src="4enLinea.jps" alt="4EnLinea-img">
-    <button class="btn-jugar-ppal">Jugar</button>
+    <div class="conteiner-img-ppal-juego">
+        <img class="img-ppal-juego" src="images/4 en linea/4EnLinea-1.jpg" alt="4EnLinea-img">
+        <button class="btn-jugar-ppal">JUGAR</button>
+    </div>
     <div class="compartir-redes">
         <h3>Compartir en </h3>
-        <h1>(iconos fontawesome)</h1>
+        <div class="iconos-redes-4EnLinea">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
     </div>
-    <h2> Imagenes y videos explicativos</h2>
-    <div class="carrusel-img-explicativas"></div>
-    <video src="movie.mp4"></video>
+    <h2 class="titulo-video-4EnLinea"> Imagenes y videos explicativos</h2>
+    <div class="carrusel-img-explicativas">
+        <div class="img-explicativa">
+            <img src="images/destacado/call of duty.jpg" alt="callOfDuty">
+            <p class="titulo-explicativa">Call Of Duty</p>
+        </div>
+        <div class="img-explicativa">
+            <img src="images/destacado/call of duty.jpg" alt="callOfDuty">
+            <p class="titulo-explicativa">Call Of Duty</p>
+        </div>
+        <div class="img-explicativa">
+            <img src="images/destacado/call of duty.jpg" alt="callOfDuty">
+            <p class="titulo-explicativa">Call Of Duty</p>
+        </div>
+        <div class="img-explicativa">
+            <img src="images/destacado/call of duty.jpg" alt="callOfDuty">
+            <p class="titulo-explicativa">Call Of Duty</p>
+        </div>
+        <div class="img-explicativa">
+            <img src="images/destacado/call of duty.jpg" alt="callOfDuty">
+            <p class="titulo-explicativa">Call Of Duty</p>
+        </div>
+        <div class="img-explicativa">
+            <img src="images/destacado/call of duty.jpg" alt="callOfDuty">
+            <p class="titulo-explicativa">Call Of Duty</p>
+        </div>
+        <div class="img-explicativa">
+            <img src="images/destacado/call of duty.jpg" alt="callOfDuty">
+            <p class="titulo-explicativa">Call Of Duty</p>
+        </div>
+    </div>
+    <div class="conteiner-video">
+        <video src="movie.mp4"></video>
+        <button class="btn-play-video"><i class="fa-brands fa-youtube"></i></button>
+    </div>
+    
     <h2>Reglas de 4 En Linea</h2>
     <p class="parrafo-reglas">Posición inicial y objetivo del juego
         El 4 en Línea pertenece a la familia de juegos populares ya que sus sencillas reglas se pueden aprender rápidamente ofreciendo un gran entretenimiento durante un largo tiempo. 
@@ -53,39 +106,52 @@
     </p>
 
     <form class="form-comentario" action="">
-        <img src="img-usuario.jpg" alt="usuario-img">
-        <label for="titulo-comentario">Deja aca tu comentario</label>
-        <input type="text">
-        <button class="btn-submit-comentar" type="submit">Comentar</button>
+        <div class="conteiner-img-usuario-input">
+            <img src="images/users/userppal.jpg" alt="usuario-img">
+        </div>
+        <label class="titulo-comentario" for="titulo-comentario">Deja aca tu comentario</label>
+        <div class="conteiner-inputSubmit">
+            <input type="text">
+            <button class="btn-submit-comentar" type="submit">Comentar</button>
+        </div> 
     </form>
     <section class="comentarios" id="conteiner-comentarios">
     </section>
     <footer>
         <div class="primerFooter">
-            <p class="titulo-primer-footer">Juegos más solicitados de la semana</p>
-            <div class="card-footer">
-                <img src="4enlinea.jpg" alt="4enlinea">
-                <p>4 En Linea</p>
+            <div class="conteiner-titulo-primer-footer">
+                <p class="titulo-primer-footer">Juegos más solicitados de la semana</p>
             </div>
-            <div class="card-footer">
-                <img src="MortalKombat.jpg" alt="MortalKombat">
-                <p>MortalKombat</p>
-            </div>
-            <div class="card-footer">
-                <img src="CounterStrike.jpg" alt="CounterStrike">
-                <p>CounterStrike</p>
-            </div>
-            <div class="card-footer">
-                <img src="MarioBross.jpg" alt="MarioBross">
-                <p>MarioBross</p>
-            </div>
-            <div class="card-footer">
-                <img src="FIFA.jpg" alt="FIFA">
-                <p>FIFA</p>
-            </div>
+            <div class="conteiner-cards-footer">
+                <div class="card-footer">
+                    <img src="images/4 en linea/4EnLinea-2.jpg" alt="4enlinea">
+                    <p class="titulo-tarjeta-footer">4 En Linea</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/pelea/mortalKombat.jpg" alt="MortalKombat">
+                    <p class="titulo-tarjeta-footer">MortalKombat</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/clasicos/counterStrike.jpg" alt="CounterStrike">
+                    <p class="titulo-tarjeta-footer">CounterStrike</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/family/MarioBross.webp" alt="MarioBross">
+                    <p class="titulo-tarjeta-footer">MarioBross</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/deportes/fifa.jpeg" alt="FIFA">
+                    <p class="titulo-tarjeta-footer">FIFA</p>
+                </div>
+            </div>   
         </div>
         <div class="segundoFooter">
-            (iconos redes)
+            <div class="iconos-redes">
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
         </div>
         <div class="tercerFooter">
             <a href="home">GameRoom</a>

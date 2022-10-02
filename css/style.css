@@ -41,6 +41,18 @@ header{
 
 .burger{
     margin-left: 25px;
+    border-style: none;
+}
+
+.burger i{
+    background-color: #081167;
+    font-size: 270%;
+    color: #F3F4FE;
+}
+
+.conteiner-user i{
+    font-size: 270%;
+    color: #F3F4FE;
 }
 
 
@@ -65,8 +77,7 @@ header{
 }
 
 .tarjeta-lanzamientos{
-
-    width: 391px;
+    width: 400px;
     background-color: #030625;
     border-radius: 20px;
     display: flex;
@@ -84,7 +95,7 @@ header{
 
 .tarjeta-lanzamientos img{
     height: 254px;
-    width: 341px;
+    width: 350px;
     margin-left: 6.5%;
     margin-top: 6%;
     border-radius: 20px;
@@ -96,23 +107,33 @@ header{
     border-radius: 30px;
     background-color:  #4152F1;
     color: #C0C6FA;
-    margin-left: 65%;
+    margin-left: 67%;
     margin-bottom: 12%;
     font-size: 100%;
 }
 
 /*SECCION RECOMENDADOS*/
 
-h2 {
+h2{
     color: #081167;
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
-.carrusel {
+.carrusel, .carrusel-img-explicativas {
     /*display: flex;*/
     /*justify-content: center;*/
+    display: flex;
+    list-style: none;
+    margin-block: 2rem;
+    margin-inline: auto;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
 }
-
+      
 .tarjeta-juego{
+    flex-shrink: 0;
+    scroll-snap-align: start;
     width: 330px;
     border-radius: 20px;
     background-color: #030625;
@@ -131,18 +152,32 @@ h2 {
     margin-top: 6%;
 }
 
-.tirulo-tarjeta{
+.tirulo-tarjeta {
     color: #FEC665;
     font-size: 180%;
     margin-left: 6%;
-    margin-top: 5%;
+    margin-top: 5px;
 }
+
+.conteiner-precioBtnComprar{
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.precio-juego-tarjeta{
+    color: #FEC665;
+    font-size: 180%;
+    margin-left: 6%;
+    margin-top: 5px;
+}
+
 
 .btn-jugar{
     border-radius: 30px;
     background-color:  #4152F1;
     color: #C0C6FA;
-    margin-left: 65%;
+    margin-left: 29%;
     margin-bottom: 12%;
     font-size: 100%;
     height: 41px;
@@ -155,7 +190,7 @@ h2 {
     border-radius: 30px;
     background-color:  #FFAB19;
     color: #C0C6FA;
-    margin-left: 65%;
+    margin-left: 16%;
     margin-bottom: 12%;
     font-size: 100%;
     height: 41px;
@@ -226,11 +261,17 @@ h2 {
     justify-content: center;
 }
 
-.iconos-redes{
+.iconos-redes, .iconos-redes-4EnLinea{
     display: flex;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 2.5%;
     margin-bottom: 3%;
+}
+
+.iconos-redes i {
+    color: #F3F4FE;
+    margin-left: 45%;
+    font-size: 250%;
 }
 
 .tercerFooter{
@@ -244,4 +285,193 @@ h2 {
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+/*SITIO 4 EN LINEA*/
+
+.conteiner-breadCrumTitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.breadCrum-conteiner{
+    background-color: #F3F4FE;
+    display: flex;
+    justify-content: center;
+    width: 185px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 1%;
+}
+
+.titulo-juego{
+    font-size: 230%;
+    color: #081167;
+    margin-top: 4%;
+}
+
+.conteiner-titulo-juego, .conteiner-video{
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner-img-ppal-juego{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-ppal-juego{
+    height: 535px;
+    left: 56px;
+    top: 235px;
+    border-radius: 0px;
+    width: 90%;
+    border-color: #4152F1;
+    border-style: solid;
+    z-index: -1;
+}
+
+.btn-jugar-ppal{
+    height: 85px;
+    width: 191px;
+    left: 622px;
+    top: 462px;
+    border-radius: 30px;
+    z-index: 1;
+    position: absolute;
+    background-color: #6E7AE2;
+    color: #F3F4FE;
+    font-size: 170%;
+    border-style: none;
+}
+
+.compartir-redes{
+    float: right;
+    width: 580px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.compartir-redes h3{
+    color: #081167;
+    font-size: 210%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+}
+
+.iconos-redes-4EnLinea i{
+    color: #081167;
+    margin-left: 10%;
+    font-size: 250%;
+}
+
+
+/*SECCION FOTOS Y VIDEO*/
+
+
+
+.titulo-video-4EnLinea{
+    margin-top: 10%;
+}
+
+.img-explicativa{
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: 330px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-explicativa{
+    color: #081167;
+    font-size: 180%;
+    margin-left: 6%;
+    margin-top: 5px;
+}
+
+/* video y .btn-play-video hay que retocar porque son igual al z-index anterior */
+video{
+    height: 535px;
+    left: 56px;
+    top: 235px;
+    width: 90%;
+    z-index: -1;
+}
+
+.btn-play-video{
+    height: 85px;
+    width: 191px;
+    left: 622px;
+    top: 462px;
+    border-radius: 30px;
+    z-index: 1;
+    position: absolute;
+    background-color: #6E7AE2;
+    color: #F3F4FE;
+    font-size: 170%;
+    border-style: none;
+}
+
+.parrafo-reglas{
+    font-size: 80%;
+    color: #081167;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+/*Formulario*/
+
+.form-comentario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.conteiner-inputSubmit{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteiner-inputSubmit input{
+    width: 70%;
+   padding-bottom: 1.5%;
+   border-radius: 10px;
+   border-style: none;
+}
+
+.btn-submit-comentar{
+    margin-right: 18%;
+    border-radius: 30px;
+    background-color:  #4152F1;
+    color: #C0C6FA;
+    font-size: 100%;
+    height: 41px;
+    width: 99px;
+    left: 197px;
+    top: 373px;
+    border-style: none;
+}
+
+.titulo-comentario {
+    color: #081167;
+    font-size: 170%;
+    margin-bottom: 0.5%;  
+}
+
+.conteiner-img-usuario-input{
+    width: 7%;
+}
+
+.conteiner-img-usuario-input img{
+    width: 100%;
+    border-radius: 6px;
 }
