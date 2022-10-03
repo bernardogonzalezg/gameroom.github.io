@@ -125,7 +125,7 @@ h2{
     margin-top: 3%;
 }
 
-.carrusel, .carrusel-img-explicativas, .carrusel-personajes-destacado {
+.carrusel, .carrusel-img-explicativas{
     /*display: flex;*/
     /*justify-content: center;*/
     display: flex;
@@ -318,24 +318,108 @@ h2{
 }
 
 .breadCrum-conteiner{
-    background-color: #F3F4FE;
     display: flex;
     justify-content: center;
     width: 185px;
+    height: 32px;
     float: left;
     margin-left: 25px;
-    margin-top: 1%;
+    margin-top: 4%;
 }
 
-/*background: var(--bgcolor);
-    color: #fff;
-    height: 32px;
-    margin: 0.2em 0.75em;
-    padding: 0 0.75em;
-    text-decoration: none;
-    transition: background .5s;
-    display: inline-block;
-    position: relative;*/
+.bread_Crum1{
+    color: #F3F4FE;
+    background-color: #034D6D;
+    padding-left: 9%;
+    padding-right: 45%;
+    padding-top: 4%;
+    padding-bottom: 16%;
+    margin-left: 203%;
+}
+
+.bread_Crum1::after {
+    content: "";
+    background-color: #034D6D;
+    width: 12px;
+    height: 38px;
+    clip-path: polygon(0 0,100% 50%,0 100%);
+    display: block;
+    position: absolute;
+    left: 208px;
+    top: 156px;
+}
+
+.bread_Crum2{
+    color: #F3F4FE;
+    background-color: #034D6D;
+    padding-left: 8%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 16%;
+    margin-left: 9%;
+}
+
+.bread_Crum2::before{
+    content: "";
+    background-color: #86D9FC;
+    width: 12px;
+    height: 38px;
+    clip-path: polygon(0 0,100% 50%,0 100%);
+    display: block;
+    position: absolute;
+    left: 225px;
+    top: 156px;
+}
+
+.bread_Crum2::after{
+    content: "";
+    background-color: #034D6D;
+    width: 12px;
+    height: 38px;
+    clip-path: polygon(0 0,100% 50%,0 100%);
+    display: block;
+    position: absolute;
+    left: 371px;
+    top: 156px;
+}
+
+.bread_Crum3{
+    color: #F3F4FE;
+    background-color: #047AAC;
+    padding-left: 8%;
+    padding-right: 38%;
+    padding-top: 4%;
+    padding-bottom: 16%;
+    margin-left: 9%;
+}
+
+.bread_Crum3::before{
+    content: "";
+    background-color: #86D9FC;
+    width: 12px;
+    height: 38px;
+    clip-path: polygon(0 0,100% 50%,0 100%);
+    display: block;
+    position: absolute;
+    left: 388px;
+    top: 156px;
+}
+
+.bread_Crum3::after{
+    content: "";
+    background-color: #047AAC;
+    width: 12px;
+    height: 38px;
+    clip-path: polygon(0 0,100% 50%,0 100%);
+    display: block;
+    position: absolute;
+    left: 549px;
+    top: 156px;
+}
+
+.breadCrum-conteiner p{
+    padding-left: 10px;
+}
 
 
 .titulo-juego{
@@ -428,7 +512,6 @@ h2{
     margin-top: 5px;
 }
 
-/* video y .btn-play-video hay que retocar porque son igual al z-index anterior */
 .video-4enlinea {
     display: flex;
     justify-content: center;
@@ -439,20 +522,6 @@ h2{
     min-height: 500px;
 }
 
-/*.btn-play-video{
-    height: 85px;
-    width: 191px;
-    left: 622px;
-    top: 462px;
-    border-radius: 30px;
-    z-index: 1;
-    position: absolute;
-    background-color: #6E7AE2;
-    color: #F3F4FE;
-    font-size: 170%;
-    border-style: none;
-}
-*/
 .parrafo-reglas{
     font-size: 80%;
     color: #081167;
@@ -689,27 +758,57 @@ h1{
     margin-bottom: 5%;
 }
 
-.tarjeta-personajes{
-    border: solid;
-    border-color: #030625;
+.carrusel-personajes-destacado{
     display: flex;
-    justify-content: center;
-    height: 440px;
-    width: 945.731689453125px;
-    left: 10px;
-    top: 10px;
+    list-style: none;
+    margin-block: 2rem;
+    margin-inline: auto;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    margin-left: 2%;
 }
 
-.conteiner-imgPersonaje{
-    height: 440px;
-    width: 352.80487060546875px;
-    left: 10px;
-    top: 10px;
+
+.tarjeta-personajes{
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: 704px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    border-color: #030625;
+    border: solid;
+}
+
+
+.conteiner-imgPersonaje img{
+    height: 423px;
+    width: 352px;
+    margin: 1%;
 }
 
 .conteiner-tituloParrafoPersonaje{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+    height: 440px;
+    width: 352px;
+}
+
+.titulo-personaje{
+    color: #081167;
+    font-size: 160%;
+    margin-bottom: 25%;
+    margin-left: 8%;
+    margin-top: 31%;
+} 
+
+.descripcion-personaje{
+    color: #081167;
+    font-size: 164%;
+    text-align: center;
+    margin-bottom: 59%;
+    margin-left: 2%;
+    margin-top: 3%;;
 }
