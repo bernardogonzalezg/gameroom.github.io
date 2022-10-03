@@ -4,61 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1d972d2727.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Destacado</title>
 </head>
-<body>
+<body class="body-Lineage">
     <header>
         <div>
             <div class="left-header">
                 <a href="home.html"><img src="images/logos/undraw_gaming_re_cma2 1.png" alt="logo"></img></a>
-                <button class="burger">hamburguesa</button>
+                <button class="burger"><i class="fa-solid fa-bars"></i></button>
                 <ul class="menuRender" id="menuRender-js"></ul>
             </div>
         </div>
         <div class="right-header"> 
-            <img src="images/logos/user.png" alt="usuario_img">
+            <div class="conteiner-user"><i class="fa-regular fa-user"></i></div>
             <ul class="menuRenderUser" id="menuRenderUser-js"></ul>
         </div>
     </header>
-    <h1 class="titulo-destacado">Lineage II</h1>
+    <h1 class="titulo-destacado">
+        <img src="images/sitioDestacado/titulo.png" alt="Lineage II">
+    </h1>
     <div class="conteiner-imagen-toAction">
-        <img src="images/sitio destacado/Rectangle 31.png" alt="lineage2">
-        <div class="toAction">
-            <p class="leyenda">Preparate para el mejor juego de rol</p>
-            <p class="titulo-toaction">Proximamente</p>
-            <button class="btn-toAction" id="btn-toAction">Reservar</button>
+            <img src="images/sitioDestacado/Rectangle 31.png" alt="lineage2">
+            <div class="toAction">
+                <p class="leyenda">Preparate para el mejor juego de rol</p>
+                <p class="titulo-toaction">PROXIMAMENTE</p>
+                <button class="btn-toAction" id="btn-toAction">Reservar</button>
+            </div>
         </div>
     </div>
     <h1 class="titulo-seccion-destacado">Features del juego</h1>
-    <div>
+    <section>
         <div class="conteiner-feature">
-            <h3>Inicios</h3>
-            <img src="images/sitio destacado/paisaje.jpg" alt="paisaje">
-            <p class="parrafo-feature">En Lineage 2 tenemos un juego de rol online en el que podremos subir 
-                hasta nivel 260 y recorrer el mundo fantástico de Aden. Empezaremos en la Isla Parlante oriental 
-                y deberemos luchar contra animales salvajes, orcos, magos, demonios o dragones.</p>
+            <div class="tarjeta-feature">
+               <div class="conteiner-tituloImg">
+                    <h3>Inicios</h3>
+                    <img src="images/sitioDestacado/paisaje.jpg" alt="paisaje">
+                </div>
+                <p class="parrafo-feature">En Lineage 2 tenemos un juego de rol online en el que podremos subir 
+                    hasta nivel 260 y recorrer el mundo fantástico de Aden. Empezaremos en la Isla Parlante oriental 
+                    y deberemos luchar contra animales salvajes, orcos, magos, demonios o dragones.
+                </p>
+            </div>
         </div>
         <div class="conteiner-feature">
-            <h3>Grandes Batallas</h3>
-            <img src="images/sitio destacado/asedio.jpg" alt="asedio">
-            <p class="parrafo-feature">Se trata de un mundo abierto con una cantidad de detalles poco habitual 
+            <div class="tarjeta-feature">
+                <div class="conteiner-tituloImg">
+                    <h3>Grandes Batallas</h3>
+                    <img src="images/sitioDestacado/asedio.jpg" alt="asedio">
+                </div>
+                <p class="parrafo-feature">Se trata de un mundo abierto con una cantidad de detalles poco habitual 
                 en los juegos para móviles. En tiempo real, con mucho contenido y guerras a gran escala. 
                  Podremos enfrentarnos en guerras épicas PvP de 50 contra 50 en asedios de fortalezas 
-                 además de crear o unirnos a un clan con otros personajes.</p>
+                 además de crear o unirnos a un clan con otros personajes.
+                </p>
+            </div>   
         </div>
         <div class="conteiner-feature">
-            <h3>Diversas Razas</h3>
-            <img src="images/sitio destacado/razas.jpg" alt="razas">
-            <p class="parrafo-feature">Podemos elegir entre cuatro razas: Humano, elfo, elfo oscuro y enano.
+            <div class="tarjeta-feature">
+                <div class="conteiner-tituloImg">
+                    <h3>Diversas Razas</h3>
+                    <img src="images/sitioDestacado/razas.jpg" alt="razas" >
+                </div>
+                <p class="parrafo-feature">Podemos elegir entre cuatro razas: Humano, elfo, elfo oscuro y enano.
                  Cada una podrá optar a tres clases distintas: guerrero, pícaro o místico. 
                  Esto nos da bastante combinaciones pero es que después elegiremos también las armas 
-                 y se seguirá ampliando con el árbol de clase en la que accederemos a clases de prestigio.</p>
+                 y se seguirá ampliando con el árbol de clase en la que accederemos a clases de prestigio.
+                </p>
+            </div>  
         </div>
-    </div>
+    </section>
     <h1 class="titulo-seccion-destacado">Historia del juego</h1>
     <div class="conteiner-img-historia">
-        <img src="images/sitio destacado/historia.png" alt="historia">
+        <img src="images/sitioDestacado/historia.png" alt="historia">
     </div>
     <div class="conteiner-descripcion-historia">
         <p class="primer-parrafo">El reino de Elmoreden había decidido tratar de conquistar el continente 
@@ -76,28 +96,49 @@
     <h1 class="titulo-seccion-destacado">Personajes del juego</h1>
     <div class="carrusel-personajes-destacado">
         <div class="tarjeta-personajes">
-            <img src="images/sitio destacado/personaje1.png" alt="gladiador">
-            <h4 class="titulo-personaje">Gladiador</h4>
-            <p class="descripcion-personaje">Especialista en uso de espadas duales y el enfrentamiento 
-                cuerpo a cuerpo individual.</p>
+            <div class="conteiner-imgPersonaje">
+                <img src="images/sitioDestacado/Paladin1.jpg" alt="gladiador">
+            </div>
+            <div class="conteiner-tituloParrafoPersonaje">
+                <h4 class="titulo-personaje">Gladiador</h4>
+                <p class="descripcion-personaje">Especialista en uso de espadas duales y el enfrentamiento 
+                    cuerpo a cuerpo individual.
+                </p>
+            </div>
+            
         </div>
         <div class="tarjeta-personajes">
-            <img src="images/sitio destacado/Ranger-de-plata1.jpg" alt="Elfos">
-            <h4 class="titulo-personaje">Elfos</h4>
-            <p class="descripcion-personaje">Se caracterizan por ser extremadamente rápidos 
-                tanto en ataques como en formulación de hechizos.</p>
+            <div class="conteiner-imgPersonaje">
+                <img src="images/sitioDestacado/Ranger-de-plata1.jpg" alt="Elfos">
+            </div>
+            <div class="conteiner-tituloParrafoPersonaje">
+                <h4 class="titulo-personaje">Elfos</h4>
+                <p class="descripcion-personaje">Se caracterizan por ser extremadamente rápidos 
+                    tanto en ataques como en formulación de hechizos.
+                </p>
+            </div>
         </div>
         <div class="tarjeta-personajes">
-            <img src="images/sitio destacado/Caballero-templario1.jpg" alt="ElfosOscuros">
-            <h4 class="titulo-personaje">Elfos Oscuros</h4>
-            <p class="descripcion-personaje">Todos los guerreros de elfo oscuro tienen Drain Health, 
-                una skill que permite absorber vida al oponente.</p>
+            <div class="conteiner-imgPersonaje">
+                <img src="images/sitioDestacado/Caballero-templario1.jpg" alt="ElfosOscuros">
+            </div>
+            <div class="conteiner-tituloParrafoPersonaje">
+                <h4 class="titulo-personaje">Elfos Oscuros</h4>
+                <p class="descripcion-personaje">Todos los guerreros de elfo oscuro tienen Drain Health, 
+                    una skill que permite absorber vida al oponente.
+                </p>
+            </div>
         </div>
         <div class="tarjeta-personajes">
-            <img src="images/sitio destacado/Caminante-del-abismo1.jpg" alt="ElfosMagicos">
-            <h4 class="titulo-personaje">Elfos Mágicos</h4>
-            <p class="descripcion-personaje">al igual que el Oracle, 
-                utiliza magias de apoyo pero más avanzadas y algunas magias curativas.</p>
+            <div class="conteiner-imgPersonaje">
+                <img src="images/sitioDestacado/Caminante-del-abismo1.jpg" alt="ElfosMagicos">
+            </div>
+            <div class="conteiner-tituloParrafoPersonaje">
+                <h4 class="titulo-personaje">Elfos Mágicos</h4>
+                <p class="descripcion-personaje">al igual que el Oracle, 
+                    utiliza magias de apoyo pero más avanzadas y algunas magias curativas.
+                </p>
+            </div> 
         </div>
     </div>
     <footer>
@@ -107,31 +148,33 @@
             </div>
             <div class="conteiner-cards-footer">
                 <div class="card-footer">
-                <img src="images/4 en linea/4EnLinea-2.jpg" alt="4enlinea">
-                <p class="titulo-tarjeta-footer">4 En Linea</p>
+                    <img src="images/4enlinea/4EnLinea-2.jpg" alt="4enlinea">
+                    <p class="titulo-tarjeta-footer">4 En Linea</p>
+                </div>   
+                <div class="card-footer">
+                    <img src="images/pelea/mortalKombat.jpg" alt="MortalKombat">
+                    <p class="titulo-tarjeta-footer">MortalKombat</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/clasicos/counterStrike.jpg" alt="CounterStrike">
+                    <p class="titulo-tarjeta-footer">CounterStrike</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/family/MarioBross.webp" alt="MarioBross">
+                    <p class="titulo-tarjeta-footer">MarioBross</p>
+                </div>
+                <div class="card-footer">
+                    <img src="images/deportes/fifa.jpeg" alt="FIFA">
+                    <p class="titulo-tarjeta-footer">FIFA</p>
+                </div> 
             </div>
-            <div class="card-footer">
-                <img src="images/pelea/mortalKombat.jpg" alt="MortalKombat">
-                <p class="titulo-tarjeta-footer">MortalKombat</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/clasicos/counterStrike.jpg" alt="CounterStrike">
-                <p class="titulo-tarjeta-footer">CounterStrike</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/family/MarioBross.webp" alt="MarioBross">
-                <p class="titulo-tarjeta-footer">MarioBross</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/deportes/fifa.jpeg" alt="FIFA">
-                <p class="titulo-tarjeta-footer">FIFA</p>
-            </div>
-            </div>
-            
         </div>
         <div class="segundoFooter">
             <div class="iconos-redes">
-                (iconos redes)
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
             </div>
         </div>
         <div class="tercerFooter">
