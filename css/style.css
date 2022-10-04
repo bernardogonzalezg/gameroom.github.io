@@ -167,13 +167,34 @@ h2{
     justify-content: space-between;
 }
 
+.conteiner-imgCart{
+    display: flex;
+    justify-content: start;
+}
+
+.conteiner-imgCart img{
+    z-index: 0;
+}
+
+.conteiner-imgCart p{
+    z-index: 1;
+    color: #FFAB19D0;
+
+}
+
+.conteiner-imgCart p i {
+    margin-top: 49px;
+    font-size: 1170%;
+    margin-left: -260px;
+
+}
+
 .precio-juego-tarjeta{
     color: #FEC665;
     font-size: 180%;
     margin-left: 6%;
     margin-top: 5px;
 }
-
 
 .btn-jugar{
     border-radius: 30px;
