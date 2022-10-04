@@ -37,13 +37,15 @@ header{
 }
 
 .burger{
-    margin-left: 55px;
+    margin-left: 53px;
     border-style: none;
+    background-color: #081167;
+    margin-bottom: 1%;
 }
 
 .burger i{
     background-color: #081167;
-    font-size: 450%;
+    font-size: 380%;
     color: #F3F4FE;
 }
 
@@ -126,14 +128,16 @@ h2{
 }
 
 .carrusel, .carrusel-img-explicativas{
-    /*display: flex;*/
-    /*justify-content: center;*/
     display: flex;
+    justify-content: start;
     list-style: none;
     margin-block: 2rem;
     margin-inline: auto;
     overflow: auto;
     scroll-snap-type: x mandatory;
+    height: auto;
+    width: 100%;
+    margin-left: 2%;
 }
       
 .tarjeta-juego{
@@ -294,6 +298,14 @@ h2{
     color: #F3F4FE;
     margin-left: 45%;
     font-size: 250%;
+}
+
+.iconos-redes i:hover, .tercerFooter a:hover{
+    color: #9DA5F5;
+}
+
+.iconos-redes-4EnLinea i:hover{
+    color:#1224CD;
 }
 
 .tercerFooter{
@@ -565,6 +577,10 @@ h2{
     border-style: none;
 }
 
+.btn-submit-comentar:hover{
+    background-color: #0E1C95;
+}
+
 .titulo-comentario {
     color: #081167;
     font-size: 170%;
@@ -579,45 +595,97 @@ h2{
     width: 100%;
     border-radius: 6px;
 }
-/* 4 EN LINEA */
 
-.juego-principal {
+/*COMENTARIOS*/
+
+.comentarios{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.conteiner-comentario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
 }
 
-.juego-principal h1{
-    color: #081167;
-}
-
-.juego-principal img{
-    box-sizing: border-box;
-    width: 1331px;
-    height: 535px;
-    top: 235px;
-}
-
-.compartir-redes {
+.conteiner-imgUsuario{
     display: flex;
-    flex-direction: row;   
+    justify-content: start;
+    margin-left: 2%;
 }
+
+.conteiner-imgUsuario img{
+    width: 107px;
+    height: 117px;
+    margin-right: 2%;
+    border-radius: 10%;
+}
+
+.conteiner-imgUsuario p{
+    padding-top: 95px;
+    color: #081167;
+    font-size: 100%;
+    height: 50%;
+}
+
+.output-comnetario{
+    background-color: #F3F4FE;
+    width: 41%;
+    padding: 1%;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.output-comnetario p{
+    color: #081167;
+    font-size: 106%;
+}
+
+.iconos-MeGusta{
+    display: flex;
+    justify-content: center;
+    margin-right: 30%;
+    margin-top: 0.4%;
+}
+
+.conteiner-MeGusta, .conteiner-NOMeGusta{
+    display: flex;
+    justify-content: center;
+    color: #081167;
+    width: 15%;
+}
+
+.iconos-MeGusta i{
+    margin-left: 2%;
+    font-size: 170%;
+}
+
+.iconos-MeGusta p{
+    padding-right: 10px;
+    margin-top: 7%;
+    font-size: 90%;
+}
+
 
 /* LINEAGE II */
 
 .body-Lineage{
-    background-image: url("///C:/Users/Usuario/Desktop/juancha/intefases/sitio%20web/backup/images/sitioDestacado/fondoTitulo.jpg");
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to bottom, rgb(103, 135, 162), rgb(201, 215, 224));
 }
 
 .titulo-destacado{
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .titulo-destacado img {
     mix-blend-mode: darken;
+    width: 45%;
 }
 
 .conteiner-imagen-toAction{
@@ -627,7 +695,6 @@ h2{
 
 .conteiner-imagen-toAction img{
     width: 99%;
-    margin-top: 2%;
     z-index: -1;
 }
 
