@@ -40,12 +40,10 @@ header{
     margin-left: 53px;
     border-style: none;
     background-color: #081167;
-    margin-bottom: 1%;
 }
 
 .burger i{
-    background-color: #081167;
-    font-size: 380%;
+    font-size: 300%;
     color: #F3F4FE;
 }
 
@@ -1334,3 +1332,50 @@ h1{
     }
     
 }
+
+.btnUser {
+    font-size: 200%;
+    color: white;
+}
+
+.menu, .user {
+    display: none;
+}
+
+.show, .showUser {
+    display: block;
+    position: absolute;
+    top: 20%;
+    width:fit-content;
+    height: min-content;
+    background-color: #081167;
+    opacity: 0.8;
+    color: white;
+    border-radius: 5%;
+    z-index: 10;
+}
+
+.show {
+    left: 1em;
+}
+
+.showUser {
+    right: 1em;
+
+    text-align: right;
+}
+
+nav ul li{
+    margin: 10%;
+    list-style: none;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding-right: 20px;
+}
+
+
+
