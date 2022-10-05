@@ -79,3 +79,55 @@ function GamebuyPingpong(){
 }
 
 
+//CARRUSELES
+
+const caja = document.querySelector(".caja-carrusel");
+const punto = document.querySelectorAll(".punto");
+
+punto.forEach( (cadaPunto, i) => {
+    punto[i].addEventListener("click", () => {
+        let posicion = i;
+        let operacion = posicion * -25;
+        caja.style.transform = `translateX(${ operacion }%)`;
+
+        punto.forEach( (cadaPunto, i) =>{
+            punto[i].classList.remove("activo");
+        })
+        punto[i].classList.add("activo");
+    });
+    
+});
+
+const cajaDos = document.querySelector(".caja-carrusel-dos");
+const puntoDos = document.querySelectorAll(".punto-dos");
+
+puntoDos.forEach( (cadaPunto, i) => {
+    puntoDos[i].addEventListener("click", () => {
+        let posicion = i;
+        let operacion = posicion * -25;
+        cajaDos.style.transform = `translateX(${ operacion }%)`;
+
+        punto.forEach( (cadaPunto, i) =>{
+            puntoDos[i].classList.remove("activo");
+        })
+        puntoDos[i].classList.add("activo");
+    });
+    
+});
+
+const cajaTres = document.querySelector(".caja-carrusel-tres");
+const puntoTres = document.querySelectorAll(".punto-tres");
+
+puntoTres.forEach( (cadaPunto, i) => {
+    puntoTres[i].addEventListener("click", () => {
+        let posicion = i;
+        let operacion = posicion * -25;
+        cajaTres.style.transform = `translateX(${ operacion }%)`;
+
+        punto.forEach( (cadaPunto, i) =>{
+            puntoTres[i].classList.remove("activo");
+        })
+        puntoTres[i].classList.add("activo");
+    });
+    
+});

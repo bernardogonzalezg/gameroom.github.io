@@ -127,7 +127,53 @@ h2{
     margin-top: 3%;
 }
 
-.carrusel, .carrusel-img-explicativas{
+/*CARRUSELES*/
+
+.carrusel {
+    width: 99.5%;
+    overflow: hidden;
+}
+
+.carrusel .caja-carrusel, .carrusel .caja-carrusel-dos, .carrusel .caja-carrusel-tres{
+    width: 201%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.carrusel .parte-carrusel{
+    width: calc( 100% / 4 );
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.carrusel .puntos, .carrusel .puntos-dos, .carrusel .puntos-tres{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel .punto, .carrusel .punto-dos, .carrusel .punto-tres{
+    width: 2em;
+    height: 2em;
+    border: 1%;
+    margin-left: 1%;
+    border-radius: 64%;
+    list-style: none;
+    background-color: #081167;
+}
+
+.carrusel .punto.activo, .carrusel .punto-dos.activo, .carrusel .punto-tres.activo {
+    background-color: #4152F1;
+}
+
+.carrusel-img-explicativas{
     display: flex;
     justify-content: start;
     list-style: none;
