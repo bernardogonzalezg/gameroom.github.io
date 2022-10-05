@@ -946,3 +946,391 @@ h1{
     margin-left: 2%;
     margin-top: 3%;;
 }
+
+/*RESPONSIVE HOME*/
+
+@media screen and (max-width: 660px){
+
+    /*HEADER*/
+
+    header{
+        background-color: #081167;
+        height: 45px; 
+        width: 98%;
+        margin-top: 4%;
+        margin-left: 1%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left-header{
+        margin-left: -30px;
+    }
+    
+    .left-header a {
+        display: none;
+    }
+
+    .right-header{
+        margin-right: 20px;
+    }
+    
+    .burger{
+        border-style: none;
+        background-color: #081167;
+        margin-bottom: 1%;
+        font-size: 50%;
+    }
+    
+    .burger i{
+        background-color: #081167;
+        font-size: 320%;
+        color: #F3F4FE;
+    }
+    
+    .conteiner-user{
+        font-size: 65%;
+    }
+
+    .conteiner-user i{
+        font-size: 230%;
+        color: #F3F4FE;
+        
+    }
+
+    /*SECCION LANZAMINETOS*/
+
+.conteiner-titulo-lanzamiento{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.conteiner-titulo-lanzamiento h1{
+     color: #081167;
+     font-size: 22px;
+     margin-top: 2%;
+     margin-bottom: 2%;
+}
+
+.carrusel-prox-lanzamientos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjeta-lanzamientos{
+    width: 400px;
+    background-color: #030625;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+
+.titulo-tarjeta{
+    color:#FEC665;
+    font-size: 66%;
+    margin-left: 6%;
+    margin-top: 5%;
+    margin-bottom: 17%;
+}
+
+.tarjeta-lanzamientos img{
+    height: 75px;
+    width: 105px;
+    margin-left: 6.5%;
+    margin-top: 7%;;
+    border-radius: 20px;
+}
+
+.btn-jugar-lanzamiento{
+    height: 19px;
+    width: 33px;
+    border-radius: 10px;
+    background-color: #4152F1;
+    color: #C0C6FA;
+    margin-left: 60%;
+    margin-bottom: 9%;
+    font-size: 42%;
+    border-style: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .50s ease-in-out, box-shadow .50s ease-in-out;
+}
+
+.btn-jugar-lanzamiento:hover{
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #4152F1;
+}
+
+    /*SECCION RECOMENDADOS*/
+
+    h2{
+        color: #081167;
+        margin-left: 5%;
+        margin-top: 3%;
+        font-size: 100%;
+    }
+
+    /*CARRUSELES*/
+
+    .carrusel {
+        width: 99.5%;
+        overflow: hidden;
+    }
+
+    .carrusel .caja-carrusel, .carrusel .caja-carrusel-dos, .carrusel .caja-carrusel-tres{
+        width: 201%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s ease;
+        transform: translateX(0%);
+    }
+
+    .carrusel .parte-carrusel{
+        width: calc( 100% / 4 );
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .carrusel .puntos, .carrusel .puntos-dos, .carrusel .puntos-tres{
+        width: 100%;
+        padding: 1em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrusel .punto, .carrusel .punto-dos, .carrusel .punto-tres{
+        border-radius: 64%;
+        list-style: none;
+        background-color: #081167;
+        width: 1em;
+        height: 1em;
+        border: 1%;
+    }
+
+    .carrusel .punto.activo, .carrusel .punto-dos.activo, .carrusel .punto-tres.activo {
+        background-color: #4152F1;
+    }
+
+    .carrusel-img-explicativas{
+        display: flex;
+        justify-content: start;
+        list-style: none;
+        margin-block: 2rem;
+        margin-inline: auto;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        height: auto;
+        width: 100%;
+        margin-left: 2%;
+    }
+        
+    .tarjeta-juego{
+        width: 95px;
+        border-radius: 12px;
+        background-color: #030625;
+        margin-left: 1%;
+        margin-bottom: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tarjeta-juego img {
+        height: 58px;
+        width: 79px;
+        border-radius: 10px;
+        margin-left: 6.5%;
+        margin-top: 6%;
+    }
+
+    .conteiner-precioBtnComprar{
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .conteiner-imgCart{
+        display: flex;
+        justify-content: start;
+    }
+
+    .conteiner-imgCart img{
+        z-index: 0;
+    }
+
+    .conteiner-imgCart p{
+        z-index: 1;
+        color: #FFAB19D0;
+
+    }
+
+    .conteiner-imgCart p i {
+        margin-top: 12px;
+        font-size: 290%;
+        margin-left: -63px;
+
+    }
+
+    .precio-juego-tarjeta{
+        color: #FEC665;
+        font-size: 75%;
+        margin-left: 6%;
+        margin-top: 1px;
+    }
+
+    .btn-jugar{
+        border-radius: 30px;
+        background-color: #4152F1;
+        color: #C0C6FA;
+        margin-right: -11%;
+        margin-bottom: 12%;
+        font-size: 50%;
+        height: 17px;
+        width: 35px;
+        border-style: none;
+    }
+
+    .btn-jugar:hover{
+        background-color: #081167;
+        transition: all 2s;
+        -webkit-transform: rotateY(-360deg);
+            -ms-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+    }
+
+    .btn-jugar a, .btn-jugar-lanzamiento a {
+        text-decoration: none;
+        color: #C0C6FA;
+    }
+
+    .btn-comprar{
+        border-radius: 30px;
+        background-color:  #FFAB19;
+        color: #030625;
+        margin-right: -11%;
+        margin-bottom: 12%;
+        font-size: 50%;
+        height: 17px;
+        width: 35px;
+        border-style: none;
+    }
+    .btn-comprar:hover{
+        background-color: #FFAB19;
+        transition: all 2s;
+        -webkit-transform: rotateX(-360deg);
+            -ms-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+    }
+    .btn-comprar i{
+        font-size: 120%;
+    }
+
+
+
+
+
+    /*FOOTER*/
+
+    .primerFooter{
+        background-color: #036791;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .titulo-primer-footer{
+        color: #F3F4FE;
+        font-size: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .conteiner-titulo-primer-footer, .conteiner-cards-footer{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+
+    .card-footer{
+        width: 56px;
+        left: 109px;
+        top: 107px;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #030625;
+        margin-left: 2%;
+    }
+
+    .card-footer img{
+        height: 24.821434px;
+        width: 47px;
+        left: 13.090908px;
+        top: 2.591553px;
+        border-radius: 9px;
+        margin-left: 6.5%;
+        margin-top: 6%;
+    }
+
+    .titulo-tarjeta-footer{
+        color: #FEC665;
+        font-size: 30%;
+        margin-left: 12%;
+        margin-top: 4%;
+        margin-bottom: 6%;
+    }
+
+    .segundoFooter{
+        background-color: #034D6D;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .iconos-redes, .iconos-redes-4EnLinea{
+        display: flex;
+        justify-content: center;
+        margin-top: 5.5%;
+        margin-bottom: 3%;
+    }
+
+    .iconos-redes i {
+        color: #F3F4FE;
+        margin-left: 27%;
+        font-size: 159%;
+    }
+
+    .iconos-redes i:hover, .tercerFooter a:hover{
+        color: #9DA5F5;
+    }
+
+    .iconos-redes-4EnLinea i:hover{
+        color:#1224CD;
+    }
+
+    .tercerFooter{
+        background-color: #012F43;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tercerFooter a{
+        color: #F3F4FE;
+        margin-left: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 54%;
+    }
+    
+}
