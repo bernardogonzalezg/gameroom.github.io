@@ -1438,6 +1438,53 @@ h1{
     
 }
 
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 20px;
+    overflow:hidden;
+}
+
+progress::-webkit-progress-value {
+    background:#047AAC;
+    border-radius : 20px;  
+}
+ 
+progress::-webkit-progress-bar {
+    background-color:#D8D8D8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; /*esta sombra es para simular el borde que he aplicado arriba para Mozilla*/
+    border-radius : 20px ;         
+}
+
+.progress {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color:#034D6D;
+    z-index: 100;
+    top: 0;
+}
+
+.progress p {
+    margin: 10px;
+}
+
+.progress2{
+    display: none;
+}
+
+
+
+
 
 
 

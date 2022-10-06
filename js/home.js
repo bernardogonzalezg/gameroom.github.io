@@ -21,10 +21,6 @@ document.querySelector("#btn-comprar-Goal3-resp").addEventListener("click", Game
 document.querySelector("#btn-comprar-MicroMachine-resp").addEventListener("click", GamebuyMicroMachineResp);
 document.querySelector("#btn-comprar-PingPong-resp").addEventListener("click", GamebuyPingPongResp);
 
-function mostrarMenu() {
-    document.querySelector(".menu").classList.toggle("show");
-}
-
 function GamebuyCircusResp(){
     let carrito = document.querySelector("#cart-inImg-CircusResp");
     console.log(carrito);
@@ -286,16 +282,3 @@ puntoTresResp.forEach( (cadaPunto, i) => {
 });
 
 
-// MUNES DESPLEGBLES
-
-document.querySelector(".burger").addEventListener("click", mostrarMenu);
-
-function mostrarMenu() {
-    document.querySelector(".menu").classList.toggle("show");
-}
-
-document.querySelector(".btnUser").addEventListener("click", mostrarMenuUsuario);
-
-function mostrarMenuUsuario() {
-    document.querySelector(".user").classList.toggle("showUser");
-}
