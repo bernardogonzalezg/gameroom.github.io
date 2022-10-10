@@ -16,7 +16,7 @@ function animateprogress (id, val){
         window.oRequestAnimationFrame ||
         window.msRequestAnimationFrame ||
         function ( callback ){
-            window.setTimeout(enroute, 1 / 60 * 1000);
+            window.setTimeout(enroute, 1 / 60 * 100);
         };
          
     };
